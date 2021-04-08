@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function hello()
+{
+    //alert("hello")
+    var x=window.event.screenX;
+    var y=window.event.screenY;
+    var z="X Cor="+x+"Y Cor="+y
+    document.getElementById("p1").innerHTML=z
+}
+function test1(){
+
+var s1="Graphic Era University"
+document.getElementById("x1").innerHTML=s1
+}
+function test2(){
+    var s2="This is onload event"
+    document.getElementById("x1").innerHTML=s2
+    document.getElementById("x1").style.color="red";
+    document.getElementById("x1").style.fontSize="50px";
+
+}
+
+</script>
+</head>
+<!-- <body onload="hello()"> 
+-->
+<body onmousemove="hello()">
+
+<h1 onmouseover="test1()" id="x1" onmouseout="test2()">This is onload event</h1>
+<p id="p1"></p>
+
+</body>
+</html>

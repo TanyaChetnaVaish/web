@@ -1,0 +1,49 @@
+<!-- <html>
+<head>
+<script>
+var v1=0
+var e
+function test1(){
+e=window.setInterval(count,100)
+}
+function count(){
+    document.getElementById("p1").innerHTML=v1
+    v1=v1+1
+}
+function test2(){
+    clearInterval(e)
+}
+function test3(){
+    document.getElementById("p1").innerHTML=0
+}
+
+</script>
+</head>
+<body>
+<p id="p1"></p>
+<input type="button" value="Start" onClick="test1()"/>
+<input type="button" value="Stop" onClick="test2()"/>
+<input type="button" value="Reset" onClick="test3()"/>
+</body>
+</html>
+-->
+<!--<html>
+<head>
+<script>
+function test1(){
+    var r=""
+    var v=document.getElementById("p1").value;
+    var len=v.length
+    for(var i=0;i<len;i++){
+        r=v[i]+r;
+        document.getElementById("p1").value=r
+    }
+}
+</script>
+</head>
+<body>
+<input type="text" placeholder="Enter String" id="p1" />
+<input type="button" value="reverse" OnClick="test1()"/>
+</body>
+</html>
+-->

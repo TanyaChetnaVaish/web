@@ -1,0 +1,38 @@
+<html>
+<body>
+<!-- Creating form in JS
+
+<form id="frm1" actions="/action_page.php">
+
+First name: <input type="text" name="fname" value="donald"><br>
+Last name:<input type="text" name="lname" value="trump"><br>
+<input type="Submit" value="Submit">
+</form>
+<button onclick="myfunction()">Try</button>
+<p id="demo"></p>
+<script>
+function myfunction(){
+    var x=document.forms["frm1"];
+    var text="";
+    var i;
+    for(i=0;i<x.length;i++){
+        text+=x.elements[i].value+"<br>";
+    }
+    document.getElementById("demo").innerHTML=text;
+}
+//-->
+<!--<a href="abc.html" rel="external" id="anchor">Link</a>
+<script>
+var a=document.getElementById("anchor");
+var b=a.getAttribute("rel");
+document.write(b); 
+a.setAttribute("rel","internal");
+//-->
+<script>
+var a=document.createElement("Button");
+var b=document.createTextNode("Click me");
+a.appendchild(b);
+document.body.appendchild(a);
+</script>
+</body>
+</html>

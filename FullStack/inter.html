@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+var v1=0
+var e1
+function test(){
+    e1=window.setInterval(count, 100)
+}
+function test1(){
+    
+    clearInterval(e1)
+}
+function count(){
+
+document.getElementById("p1").innerHTML=v1
+v1=v1+1
+}
+function test2(){
+    /*v1=0
+    e1=window.setInterval(count,100)
+    */document.getElementById("p1").innerHTML=0
+}
+</script>
+</head>
+<body>
+<p id="p1"></p>
+<input type="button" value="start" onClick="test()">
+<input type="button" value="stop" onClick="test1()">
+<input type="button" value="reset" onClick="test2()">
+</body>
+</html>

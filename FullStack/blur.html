@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+//DO: Input a string and create a button, onclciking the button the string reverses
+function ch1(){
+    var x=document.getElementById("user").value
+    var y=x.toUpperCase()
+    document.getElementById("user").value=y
+
+
+}
+function foc1(){
+alert("Focus Call")
+}
+</script>
+</head>
+<body>
+<input type="text" placeholder="Enter User name" id="user" onblur="ch1()"><br/>
+<input type="password" placeholder="Enter Password" >
+</body>
+</html>
